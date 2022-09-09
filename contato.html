@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Marvel- Contato </title>
+    <link rel="shortcut icon" href="img/logo marvel.svg" />
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="stylesheet" href="js/main.js">
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init("KXpjCk1r0mpcKgSYJ0");
+    })();
+    </script>
+</head>
+<body>
+    <nav>
+        <div class="container">
+            <h1>
+                <a href="index.html">
+                    <img src="img/logo marvel.svg" alt="Meu Logo">
+                </a>
+            </h1>
+            <ul>
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="Filmes e Séries.html">FILMES/SÈRIES</a></li>
+                <li><a href="contato.html">CONTATO</a></li>
+                <li><a href="produtos.html">PRODUTOS</a></li>
+            </ul>
+        </div>
+    </nav>
+    <header>
+        <div class="container clearfix">
+            <img src="img/kv-new1.png" alt="imagem Marvel 3.0">
+        </div>
+    </header>
+    
+    <main>
+        <div calss="container clearfix">
+            <div calss="col-12">
+                <form>
+                    <label for="name">Informe seu nome</label>
+                    <input type="text" name="nome" id="nome"
+                        placeholder="Nome" required>
+                    <label for="email">Informe se E-mail</label>
+                    <input type="email" name="email" id="email"
+                        placeholder="Infrome seu E-mail" required="true">
+                    <input type="text" name="cidade/estado" id="cidade/estado"
+                        placeholder="Infrome sua cidade/estado onde mora" required="true">
+
+                    <label for="nome">Motivo</label>
+                    <select name="motivo" id="motivo" required>
+                        <option value="">Selecione o Motivo</option>
+                        <option value="duvida">Dúvida</option>
+                        <option value="sugestão">Sugestão</option>
+                        <option value="problema">Relatar Problema</option>
+                        <option value="outro">Outro</option>
+                    </select>
+
+                    <label for="mensagem">Informe sua Mensagem</label>
+                    <textarea name="mensagem" id="mensagem" rows="5"></textarea>
+
+                    <button type="submit">
+                        Enviar
+                    </button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+            <div class="container clearfix center">
+                <p>Instituto Federal de Educação Ciência e Tecnologia Catarinense - Campus Videira</p>
+                <p>Rodovia SC 135, km 125 - Bairro Campo Experimental - CEP 89564-590 - Videira - SC - Fone: (49) 3533-4900</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
